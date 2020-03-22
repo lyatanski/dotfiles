@@ -1,7 +1,5 @@
 
-"colorscheme molokai
-colorscheme distinguished
-colorscheme vividchalk
+colorscheme plain256
 highlight CursorLine cterm=bold ctermbg=Black
 
 if &diff
