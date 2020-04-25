@@ -1,0 +1,12 @@
+set style address background none
+set style address foreground red
+set style address intensity normal
+set style filename background none
+set style filename foreground green
+set style filename intensity normal
+set style function background none
+set style function foreground yellow
+set style function intensity normal
+set style variable background none
+set style variable foreground cyan
+set style variable intensity normal
