@@ -1,3 +1,4 @@
+set nocompatible
 
 colorscheme plain256
 highlight CursorLine cterm=bold ctermbg=Black
@@ -11,7 +12,8 @@ if &bin
   au BufWritePre * %!xxd -r
 endif
 
-set nocompatible
+packadd termdebug
+let g:termdebug_wide = 80
 
 set wildmenu
 set number
