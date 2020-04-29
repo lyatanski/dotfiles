@@ -12,9 +12,15 @@ if &bin
   au BufWritePre * %!xxd -r
 endif
 
+" GDB integration
 packadd termdebug
 let g:termdebug_wide = 80
 
+" netrw file browser tree list and no banner
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+
+set showmode
 set wildmenu
 set number
 set list
@@ -35,6 +41,4 @@ set softtabstop=4
 set shiftwidth=4
 
 set scrolloff=9
-
-set showmode
 
