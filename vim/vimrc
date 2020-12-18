@@ -1,4 +1,5 @@
 set nocompatible
+set noswapfile
 
 colorscheme plain256
 highlight CursorLine cterm=bold ctermbg=Black
