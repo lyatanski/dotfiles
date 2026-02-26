@@ -14,7 +14,7 @@ if &bin
 endif
 
 " GDB integration
-packadd termdebug
+" packadd termdebug
 let g:termdebug_wide = 80
 
 " netrw file browser tree list and no banner
@@ -29,6 +29,7 @@ set listchars=tab:↹∘,trail:∙
 set matchpairs+=<:>
 set cursorline
 set colorcolumn=79
+set laststatus=2
 
 set hlsearch
 set incsearch
