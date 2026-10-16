@@ -1,6 +1,10 @@
 set nocompatible
 set noswapfile
 
+filetype plugin indent on
+syntax on
+packadd! matchit
+
 colorscheme plain256
 highlight CursorLine cterm=bold ctermbg=Black
 
