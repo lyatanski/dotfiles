@@ -5,8 +5,11 @@ filetype plugin indent on
 syntax on
 packadd! matchit
 
+" 24-bit color; t_8f/t_8b are needed when $TERM isn't xterm-like (e.g. in tmux)
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colorscheme plain256
-highlight CursorLine cterm=bold ctermbg=Black
 
 if &diff
   set diffopt+=iwhite
@@ -60,7 +63,9 @@ function! s:Navigate(dir)
   endif
 endfunction
 
+" Neovim terminals don't treat <C-w> specially
+let s:tprefix = has('nvim') ? '<Cmd>' : '<C-w>:'
 for [s:key, s:dir] in [['Left', 'h'], ['Down', 'j'], ['Up', 'k'], ['Right', 'l']]
   execute 'nnoremap <silent> <C-' . s:key . '> :call <SID>Navigate("' . s:dir . '")<CR>'
-  execute 'tnoremap <silent> <C-' . s:key . '> <C-w>:call <SID>Navigate("' . s:dir . '")<CR>'
+  execute 'tnoremap <silent> <C-' . s:key . '> ' . s:tprefix . 'call <SID>Navigate("' . s:dir . '")<CR>'
 endfor
