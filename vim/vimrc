@@ -5,8 +5,11 @@ filetype plugin indent on
 syntax on
 packadd! matchit
 
+" 24-bit color; t_8f/t_8b are needed when $TERM isn't xterm-like (e.g. in tmux)
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colorscheme plain256
-highlight CursorLine cterm=bold ctermbg=Black
 
 if &diff
   set diffopt+=iwhite
