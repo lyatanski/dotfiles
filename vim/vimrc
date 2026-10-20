@@ -50,3 +50,17 @@ set shiftwidth=4
 
 set scrolloff=9
 
+
+" Ctrl+arrow moves between splits; at the edge it hands over to tmux panes
+function! s:Navigate(dir)
+  let l:nr = winnr()
+  execute 'wincmd ' . a:dir
+  if winnr() == l:nr && !empty($TMUX)
+    call system('tmux select-pane -' . tr(a:dir, 'hjkl', 'LDUR'))
+  endif
+endfunction
+
+for [s:key, s:dir] in [['Left', 'h'], ['Down', 'j'], ['Up', 'k'], ['Right', 'l']]
+  execute 'nnoremap <silent> <C-' . s:key . '> :call <SID>Navigate("' . s:dir . '")<CR>'
+  execute 'tnoremap <silent> <C-' . s:key . '> <C-w>:call <SID>Navigate("' . s:dir . '")<CR>'
+endfor
