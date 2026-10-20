@@ -63,7 +63,9 @@ function! s:Navigate(dir)
   endif
 endfunction
 
+" Neovim terminals don't treat <C-w> specially
+let s:tprefix = has('nvim') ? '<Cmd>' : '<C-w>:'
 for [s:key, s:dir] in [['Left', 'h'], ['Down', 'j'], ['Up', 'k'], ['Right', 'l']]
   execute 'nnoremap <silent> <C-' . s:key . '> :call <SID>Navigate("' . s:dir . '")<CR>'
-  execute 'tnoremap <silent> <C-' . s:key . '> <C-w>:call <SID>Navigate("' . s:dir . '")<CR>'
+  execute 'tnoremap <silent> <C-' . s:key . '> ' . s:tprefix . 'call <SID>Navigate("' . s:dir . '")<CR>'
 endfor
