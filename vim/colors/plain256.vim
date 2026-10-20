@@ -56,7 +56,7 @@ call s:ColorDictParser({
 	\ , 'CursorLineNr'                : [         'GREY_FF',         'GREY_58',               '']
 	\ , 'CursorColumn'                : [         'GREY_FF',         'GREY_3A',               '']
 	\
-	\ , 'Folded'                      : [         'GREY_B2',         'GREY_1C',               '']
+	\ , 'Folded'                      : [         'GREY_AF',         'GREY_1C',               '']
 	\ , 'FoldColumn'                  : [         'GREY_76',         'GREY_1C',               '']
 	\ , 'SignColumn'                  : [         'GREY_FF',         'GREY_12',           'bold']
 	\ , 'ColorColumn'                 : [                '',         'GREY_12',               '']
@@ -113,14 +113,14 @@ call s:ColorDictParser({
 	\ , 'StorageClass'                : [           'BEIGE',                '',               '']
 	\ , 'Operator'                    : [       'TAN_LIGHT',                '',               '']
 	\
-	\ , 'TODO'                        : [    'YELLOW_LIGHT',      'BROWN_DARK',           'bold']
+	\ , 'TODO'                        : [          'YELLOW',      'BROWN_DARK',           'bold']
 	\
 	\ , 'SyntasticWarning'            : [     'GOLD_BRIGHT',      'BROWN_DARK',               '']
 	\ , 'SyntasticError'              : [   'ORANGE_BRIGHT',          'MAROON',               '']
 	\
-	\ , 'Pmenu'                       : [         'GREY_A8',         'GREY_58',               '']
+	\ , 'Pmenu'                       : [         'GREY_AF',         'GREY_58',               '']
 	\ , 'PmenuSel'                    : [         'GREY_DA',         'GREY_8A',               '']
-	\ , 'PmenuSbar'                   : [         'GREY_DA',         'GREY_A8',               '']
+	\ , 'PmenuSbar'                   : [         'GREY_DA',         'GREY_AF',               '']
 	\
 	\ , 'phpEOL'                      : [         'GREY_8A',                '',               '']
 	\ , 'phpStringDelim'              : [      'BROWN_DARK',                '',               '']
@@ -133,7 +133,7 @@ call s:ColorDictParser({
 	\
 	\ , 'PHPClassTag'                 : [         'GREY_DA',                '',               '']
 	\ , 'PHPInterfaceTag'             : [         'GREY_DA',                '',               '']
-	\ , 'PHPFunctionTag'              : [     'YELLOW_SAND',                '',           'bold']
+	\ , 'PHPFunctionTag'              : [     'YELLOW_WARM',                '',           'bold']
 	\
 	\ , 'pythonDocString'             : [         'GREY_58',         'GREY_12',               '']
 	\ , 'pythonDocStringTitle'        : [         'GREY_8A',         'GREY_12',               '']
@@ -172,7 +172,7 @@ call s:ColorDictParser({
 	\ , 'DiffDelete'                  : [             'RED',                '',               '']
 	\ , 'DiffText'                    : [     'GOLD_BRIGHT',      'BROWN_DARK',   'reverse,bold']
 	\
-	\ , 'diffLine'                    : [ 'BLUE_CORNFLOWER',                '',           'bold']
+	\ , 'diffLine'                    : [      'BLUE_STEEL',                '',           'bold']
 	\ , 'diffFile'                    : [         'GREY_6C',                '',               '']
 	\ , 'diffNewFile'                 : [         'GREY_6C',                '',               '']
 \ })
