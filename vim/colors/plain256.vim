@@ -61,8 +61,8 @@ call s:ColorDictParser({
 	\ , 'SignColumn'                  : [         'GREY_FF',         'GREY_12',           'bold']
 	\ , 'ColorColumn'                 : [                '',         'GREY_12',               '']
 	\
-	\ , 'StatusLine'                  : [         'GREY_FF',         'GREY_30',           'bold']
-	\ , 'StatusLineNC'                : [         'GREY_80',         'GREY_08',               '']
+	\ , 'StatusLine'                  : [         'GREY_FF',                '',           'bold']
+	\ , 'StatusLineNC'                : [         'GREY_80',                '',               '']
 	\
 	\ , 'LineNr'                      : [         'GREY_76',         'GREY_26',               '']
 	\ , 'VertSplit'                   : [         'GREY_58',         'GREY_1C',               '']
