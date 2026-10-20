@@ -122,19 +122,6 @@ call s:ColorDictParser({
 	\ , 'PmenuSel'                    : [         'GREY_DA',         'GREY_8A',               '']
 	\ , 'PmenuSbar'                   : [         'GREY_DA',         'GREY_AF',               '']
 	\
-	\ , 'phpEOL'                      : [         'GREY_8A',                '',               '']
-	\ , 'phpStringDelim'              : [      'BROWN_DARK',                '',               '']
-	\ , 'phpDelimiter'                : [             'RED',                '',               '']
-	\ , 'phpFunctions'                : [     'YELLOW_WARM',                '',           'bold']
-	\ , 'phpBoolean'                  : [          'ORANGE',                '',           'bold']
-	\ , 'phpOperator'                 : [           'PEACH',                '',               '']
-	\ , 'phpMemberSelector'           : [      'ROSE_DUSTY',                '',           'bold']
-	\ , 'phpParent'                   : [          'YELLOW',                '',               '']
-	\
-	\ , 'PHPClassTag'                 : [         'GREY_DA',                '',               '']
-	\ , 'PHPInterfaceTag'             : [         'GREY_DA',                '',               '']
-	\ , 'PHPFunctionTag'              : [     'YELLOW_WARM',                '',           'bold']
-	\
 	\ , 'pythonDocString'             : [         'GREY_58',         'GREY_12',               '']
 	\ , 'pythonDocStringTitle'        : [         'GREY_8A',         'GREY_12',               '']
 	\ , 'pythonRun'                   : [     'GREEN_MUTED',                '',               '']
@@ -180,10 +167,6 @@ call s:ColorDictParser({
 hi link htmlTag            xmlTag
 hi link htmlTagName        xmlTagName
 hi link htmlEndTag         xmlEndTag
-
-hi link phpCommentTitle    vimCommentTitle
-hi link phpDocTags         vimCommentString
-hi link phpDocParam        vimCommentTitle
 
 hi link diffAdded          DiffAdd
 hi link diffChanged        DiffChange
